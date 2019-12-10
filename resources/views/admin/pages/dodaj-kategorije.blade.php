@@ -15,12 +15,14 @@
 @section('data')
 
     <div class="row">
+        <div class="col-12 col-md-12">
+            <h4>Dodaj kategoriju</h4>
+            <div style="border-bottom: 1px solid #c5c5c5; margin-bottom: 30px;"></div>
+        </div>
+        <div class="col-12 col-md-4"></div>
         <div class="col-12 col-md-4">
             <div class="row">
-                <div class="col-12 col-md-12">
-                    <h4>Dodaj kategoriju</h4>
-                    <div style="border-bottom: 1px solid #c5c5c5; margin-bottom: 30px;"></div>
-                </div>
+                
             </div>
         
             @if($errors->any())
@@ -48,17 +50,6 @@
 
             <form action="/admin/dodaj-kategorije" method="POST">
                 @csrf
-
-                <div class="row">
-                    <div class="form-group col-12 col-md-12">
-                        <label>Tip kategorije</label>
-                        <select class="form-control" name="category_type">
-                            <option value="" selected disabled>Izaberite tip kategorije</option>
-                            <option value="blog">Blog</option>
-                            <option value="model">Model</option>
-                        </select>
-                    </div>
-                </div>
 
                 <div class="row">
                     <div class="form-group col-12 col-md-12">
@@ -94,54 +85,6 @@
                 <button class="btn btn-primary">Sačuvaj</button>
             </form>
         </div>
-
-
-        <div class="col-12 col-md-4">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <h4>Aktivne kategorije</h4>
-                    <div style="border-bottom: 1px solid #c5c5c5; margin-bottom: 30px;"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-md-12">
-
-                    @if(count($activeCategory) > 0)
-                        @foreach($activeCategory as $active)
-                            <li class="li">{{ $active->category_type }} / {{ $active->category_name }} <a style="margin-left: 15px;" href="/admin/izmeni-kategoriju/{{ $active->id }}"><b>Izmeni</b></a></li>
-                        @endforeach
-                    @else
-                        <p><b>Trenutno nema aktivnih kategorija</b></p>
-                    @endif
-
-                </div>
-            </div>
-        </div>
-
-        <div class="col-12 col-md-4">
-            <div class="row">
-                <div class="col-12 col-md-12">
-                    <h4>Neaktivne kategorije</h4>
-                    <div style="border-bottom: 1px solid #c5c5c5; margin-bottom: 30px;"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-md-12">
-
-                    @if(count($inactiveCategory) > 0)
-                        @foreach($inactiveCategory as $inactive)
-                            <li class="li">{{ $inactive->category_type }} / {{ $inactive->category_name }} <a style="margin-left: 15px;" href="/admin/izmeni-kategoriju/{{ $inactive->id }}"><b>Izmeni</b></a></li>
-                        @endforeach
-                    @else
-                        <p><b>Trenutno nema neaktivnih kategorija</b></p>
-                    @endif
-
-                </div>
-            </div>
-        </div>
-
 
     </div>
 

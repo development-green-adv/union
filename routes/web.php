@@ -21,6 +21,10 @@ Route::get("/admin/login", "AdminController@loginView")->name("admin.login");
 Route::get("/admin/home", "AdminController@homePage")->middleware("auth");
 
 
+Route::get("/admin/dodaj-kategoriju", "AdminController@getAddCategory")->middleware("auth");
+Route::post("/admin/dodaj-kategorije", "AdminController@storeCategory")->middleware("auth");
+
+
 
 // rute za proizvode
 Route::get("/admin/add-products", "AdminController@getAddProducts")->middleware("auth");

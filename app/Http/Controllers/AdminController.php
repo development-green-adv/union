@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use App\User;
 use App\ImageGallery;
+use App\Category;
 use App\News;
 use App\Event;
 use App\Blog;
-use App\Position;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
@@ -40,6 +40,62 @@ class AdminController extends Controller
         $allImages = $gallery->orderBy('id', 'DESC')->get();
         return view("admin/pages/add-product", compact("allImages"));
 
+    }
+
+
+    public function getAddCategory(){
+
+        return view("admin/pages/dodaj-kategorije");
+
+    }
+
+
+    public function storeCategory(Request $request){
+
+        $category = new Category();
+
+        // validacija input polja
+        $request->validate([
+            'category_name' => 'required|max:150'
+        ]);
+
+        // provera da li u bazi postoji kategorija sa ovim imenom
+        $categoryName = $category->where('category_name', $request->input('category_name'))->get();
+        if(count($categoryName) > 0){
+            return redirect()->back()->with('messageError', 'Kategorija sa ovim imenom vec postoji');
+        }else{
+
+            $last = $category->orderBy('position', 'desc')->first();
+
+            if(empty($last)){
+                $position = 0;
+            }else{
+                $position = $last->position + 1;
+            }
+
+            // kreiranje aliasa za kategoriju
+            $alias = str_slug($request->input('category_name'), '-');
+
+            //setovanje polja u bazi podataka
+            $category->category_name = $request->input('category_name');
+            $category->alias = $alias;
+            $category->category_keywords = $request->input('category_keywords');
+            $category->category_description = $request->input('category_description');
+            $category->status = $request->input('status');
+            $category->position = $position;
+
+            // sacuvavanje podataka u bazi
+            $save = $category->save();
+
+            // provera, ako je sacuvano, vraca na stranicu za dodavanje kategorija ili vraca poruku
+            if($save){
+                return redirect()->back()->with('message', 'Uspešno ste dodali kategoriju');
+            }else{
+                return "nije sacuvano";
+            }
+
+        }
+        
     }
 
 
