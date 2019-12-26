@@ -106,6 +106,16 @@ Route::get("/admin/obrisi-baner/{id}", "AdminController@deleteBaner")->middlewar
 // rute za galeriju
 Route::get("/admin/dodaj-galeriju", "AdminController@getAddGallery")->middleware("auth");
 Route::post("/admin/dodaj-galeriju", "AdminController@storeGallery")->middleware("auth");
+Route::get("/admin/lista-galerija", "AdminController@listGallery")->middleware("auth");
+Route::get("/admin/obrisi-galeriju/{id}", "AdminController@deleteGallery")->middleware("auth");
+
+
+
+// ruta za video galeriju
+Route::get("/admin/dodaj-video-galeriju", "AdminController@getAddVideoGallery")->middleware("auth");
+Route::post("/admin/dodaj-video-galeriju", "AdminController@storeVideoGallery")->middleware("auth");
+Route::get("/admin/lista-video-galerija", "AdminController@listVideoGallery")->middleware("auth");
+Route::get("/admin/obrisi-video-galeriju/{id}", "AdminController@deleteVideoGallery")->middleware("auth");
 
 
 

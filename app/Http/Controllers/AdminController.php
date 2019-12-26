@@ -13,6 +13,7 @@ use App\Page;
 use App\File;
 use App\Gallery;
 use App\Nastava;
+use App\Video;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
@@ -549,25 +550,176 @@ class AdminController extends Controller
 
         $galleryy = new Gallery();
 
-        if(!empty($request->input("galleryImages"))){
-            $gallery = implode(",", $request->input("galleryImages"));
-         }else{
-             $gallery = "";
-         }
+        if($request->input("lang") != ""){
 
-        $galleryy->gallery_name = $request->input("gallery_name");
-        $galleryy->gallery_image = $gallery;
-        $galleryy->lang = $request->input("lang");
-        $saveGall = $galleryy->save();
+            $gallExist = Gallery::where("lang", $request->input("lang"))->get();
 
+            if(count($gallExist) > 0){
 
-        if($saveGall){
+                $deletGallery = Gallery::where("lang", $request->input("lang"))->delete();
 
-            return redirect()->back()->with('success', 'Uspešno ste dodali galeriju');
+                if($deletGallery){
+    
+                    if(!empty($request->input("galleryImages"))){
+                        $gallery = implode(",", $request->input("galleryImages"));
+                    }else{
+                        $gallery = "";
+                    }
+        
+                    $galleryy->gallery_name = $request->input("gallery_name");
+                    $galleryy->gallery_image = $gallery;
+                    $galleryy->lang = $request->input("lang");
+                    $saveGall = $galleryy->save();
+        
+        
+                    if($saveGall){
+        
+                        return redirect()->back()->with('success', 'Uspešno ste dodali galeriju');
+        
+                    }else{
+        
+                        return redirect()->back()->with('messageError', 'Niste dodali galeriju');
+        
+                    }
+    
+                }
+
+            }else{
+
+                if(!empty($request->input("galleryImages"))){
+                    $gallery = implode(",", $request->input("galleryImages"));
+                }else{
+                    $gallery = "";
+                }
+    
+                $galleryy->gallery_name = $request->input("gallery_name");
+                $galleryy->gallery_image = $gallery;
+                $galleryy->lang = $request->input("lang");
+                $saveGall = $galleryy->save();
+    
+    
+                if($saveGall){
+    
+                    return redirect()->back()->with('success', 'Uspešno ste dodali galeriju');
+    
+                }else{
+    
+                    return redirect()->back()->with('messageError', 'Niste dodali galeriju');
+    
+                }
+
+            }
 
         }else{
 
-            return redirect()->back()->with('messageError', 'Niste dodali galeriju');
+            return redirect()->back()->with("messageError", "Morate izabrati jezik");
+
+        }
+
+    }
+
+
+    public function listGallery(){
+
+        $rows = Gallery::get();
+
+        return view("admin/pages/lista-galerija", compact("rows"));
+
+    }
+
+
+    public function deleteGallery($id){
+
+        $deleteGall = Gallery::where("id", $id)->delete();
+
+        if($deleteGall){
+
+            return redirect()->back()->with('success', 'Uspešno ste obirsali galeriju');
+
+        }else{
+
+            return redirect()->back()->with('messageError', 'Niste obrisali galeriju');
+
+        }
+
+    }
+
+
+    
+    public function getAddVideoGallery(){
+
+        return view("admin/pages/dodaj-video-galeriju");
+
+    }
+
+
+    public function storeVideoGallery(Request $request){
+
+        $video = new Video();
+
+        if($request->input("lang") != ""){
+
+            $videoExist = Video::where("lang", $request->input("lang"))->get();
+
+            if(count($videoExist) > 0){
+
+                $deletVid = Video::where("lang", $request->input("lang"))->delete();
+
+                if($deletVid){
+
+                    if(!empty($request->input("video_link"))){
+                        $videos = implode(",", $request->input("video_link"));
+                    }else{
+                        $videos = "";
+                    }
+            
+                    $video->video_name = $request->input("gallery_name");
+                    $video->video_gallery = $videos;
+                    $video->lang = $request->input("lang");
+            
+                    $saveVideo = $video->save();
+            
+                    if($saveVideo){
+            
+                        return redirect()->back()->with('success', 'Uspešno ste dodali video galeriju');
+            
+                    }else{
+            
+                        return redirect()->back()->with('messageError', 'Niste dodali video galeriju');
+            
+                    }
+
+                }
+
+            }else{
+
+                if(!empty($request->input("video_link"))){
+                    $videos = implode(",", $request->input("video_link"));
+                }else{
+                    $videos = "";
+                }
+        
+                $video->video_name = $request->input("gallery_name");
+                $video->video_gallery = $videos;
+                $video->lang = $request->input("lang");
+        
+                $saveVideo = $video->save();
+        
+                if($saveVideo){
+        
+                    return redirect()->back()->with('success', 'Uspešno ste dodali video galeriju');
+        
+                }else{
+        
+                    return redirect()->back()->with('messageError', 'Niste dodali video galeriju');
+        
+                }
+
+            }
+        
+        }else{
+
+            return redirect()->back()->with("messageError", "Morate izabrati jezik");
 
         }
 
@@ -575,7 +727,13 @@ class AdminController extends Controller
 
 
 
+    public function listVideoGallery(){
 
+        $rows = Video::get();
+
+        return view("admin/pages/lista-video-galerija", compact("rows"));
+
+    }
 
 
 

@@ -220,6 +220,38 @@
                 <li class="treeview">
                     <a href="#">
                     <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Galerija slika</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-galeriju"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj galeriju</a></li>
+                        <li><a href="/admin/lista-galerija"><i class="fas fa-arrow-alt-circle-right"></i> Lista galerija</a></li>
+                    </ul>
+                </li>
+                <!--// Kraj kategorije -->
+
+                <!--// Kategorije -->
+                <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Video galerija</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-video-galeriju"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj video galeriju</a></li>
+                        <li><a href="/admin/lista-video-galerija"><i class="fas fa-arrow-alt-circle-right"></i> Lista video galerija</a></li>
+                    </ul>
+                </li>
+                <!--// Kraj kategorije -->
+
+                <!--// Kategorije -->
+                <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
                     <span style="margin-left: 5px;">Administratori</span>
                     <span class="pull-right-container">
                         <span class="label label-primary pull-right">2</span>
@@ -232,21 +264,7 @@
                 </li>
                 <!--// Kraj kategorije -->
 
-                <!--// Kategorije -->
-                <li class="treeview">
-                    <a href="#">
-                    <i class="fas fa-users"></i>
-                    <span style="margin-left: 5px;">Galerija slika</span>
-                    <span class="pull-right-container">
-                        <span class="label label-primary pull-right">2</span>
-                    </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="/admin/dodaj-galeriju"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj galeriju</a></li>
-                        <li><a href="/admin/lista-galerija"><i class="fas fa-arrow-alt-circle-right"></i> Lista galerija</a></li>
-                    </ul>
-                </li>
-                <!--// Kraj kategorije -->
+    
 
         
             </ul>
