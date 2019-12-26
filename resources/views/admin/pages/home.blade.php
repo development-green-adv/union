@@ -31,7 +31,7 @@
 
     <div class="row">
         <div class="col-12 col-md-4">
-            <h4>Dobrodošli u <b>NAZIV FIRME</b> Admin panel</h4>
+            <h4>Dobrodošli u <b>UNION</b> Admin panel</h4>
             <p>Sa leve strane se nalaze sve aktivne opcije ovog panela</p>
             <div style="border-bottom: 1px solid #c5c5c5; margin-bottom: 30px;"></div>
         </div>

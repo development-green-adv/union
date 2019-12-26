@@ -132,6 +132,94 @@
                 <li class="treeview">
                     <a href="#">
                     <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Kategorije</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-kategoriju"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj katgorije</a></li>
+                        <li><a href="/admin/lista-kategorija"><i class="fas fa-arrow-alt-circle-right"></i> Lista kategorija</a></li>
+                        <!--<li><a href="/admin/sortiraj-kategorije"><i class="fas fa-arrow-alt-circle-right"></i> Sortiraj kategorije</a></li>-->
+                    </ul>
+                </li>
+                <!--// Kraj kategorije -->
+
+
+
+                <!--// Podkategorije -->
+                <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Stranice</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-stranicu"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj stranice</a></li>
+                        <li><a href="/admin/lista-stranica"><i class="fas fa-arrow-alt-circle-right"></i> Lista stranica</a></li>
+                        <!--<li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Sortiraj stranice podkategorije</a></li>-->
+                    </ul>
+                </li>
+                <!--// Kraj podkategorije -->
+
+                 <!--// Podkategorije -->
+                 <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Nastavni kadar</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-nastavni-kadar"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj nastavni kadar</a></li>
+                        <li><a href="/admin/lista-nastavnog-kadra"><i class="fas fa-arrow-alt-circle-right"></i> Lista nastavnog kadra</a></li>
+                        <!--<li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Sortiraj stranice podkategorije</a></li>-->
+                    </ul>
+                </li>
+                <!--// Kraj podkategorije -->
+
+
+                <!--// Podkategorije -->
+                <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Dokumenti</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-document"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj dokument</a></li>
+                        <li><a href="/admin/lista-dokumenata"><i class="fas fa-arrow-alt-circle-right"></i> Lista dokumenata</a></li>
+                        <!--<li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Sortiraj stranice podkategorije</a></li>-->
+                    </ul>
+                </li>
+                <!--// Kraj podkategorije -->
+
+                <!--// Podkategorije -->
+                <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span style="margin-left: 5px;">Baneri</span>
+                    <span class="pull-right-container">
+                        <span class="label label-primary pull-right">2</span>
+                    </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="/admin/dodaj-baner"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj baner</a></li>
+                        <li><a href="/admin/lista-banera"><i class="fas fa-arrow-alt-circle-right"></i> Lista banera</a></li>
+                        <!--<li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Sortiraj stranice podkategorije</a></li>-->
+                    </ul>
+                </li>
+                <!--// Kraj podkategorije -->
+
+                <!--// Kategorije -->
+                <li class="treeview">
+                    <a href="#">
+                    <i class="fas fa-users"></i>
                     <span style="margin-left: 5px;">Administratori</span>
                     <span class="pull-right-container">
                         <span class="label label-primary pull-right">2</span>
@@ -148,35 +236,17 @@
                 <li class="treeview">
                     <a href="#">
                     <i class="fas fa-users"></i>
-                    <span style="margin-left: 5px;">Proizvodi</span>
+                    <span style="margin-left: 5px;">Galerija slika</span>
                     <span class="pull-right-container">
                         <span class="label label-primary pull-right">2</span>
                     </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/admin/add-products"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj Proizvod</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lista Admina</a></li>
+                        <li><a href="/admin/dodaj-galeriju"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj galeriju</a></li>
+                        <li><a href="/admin/lista-galerija"><i class="fas fa-arrow-alt-circle-right"></i> Lista galerija</a></li>
                     </ul>
                 </li>
                 <!--// Kraj kategorije -->
-
-                <!--// Kategorije -->
-                <li class="treeview">
-                    <a href="#">
-                    <i class="fas fa-users"></i>
-                    <span style="margin-left: 5px;">Kategorije</span>
-                    <span class="pull-right-container">
-                        <span class="label label-primary pull-right">2</span>
-                    </span>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="/admin/dodaj-kategoriju"><i class="fas fa-arrow-alt-circle-right"></i> Dodaj katgorije</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Lista kategorija</a></li>
-                        <li><a href="#"><i class="fas fa-arrow-alt-circle-right"></i> Sortiraj kategorije</a></li>
-                    </ul>
-                </li>
-                <!--// Kraj kategorije -->
-
 
         
             </ul>
