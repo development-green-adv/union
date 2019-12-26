@@ -9,7 +9,7 @@
                 <a href="/">Naslovna</a>
                 <a href="#">Srpski</a>
                 <a href="#">Engleski</a>
-                <a style="border: none;" href="#">Arabian</a>
+                <a style="border: none;" href="#">Arabiani</a>
             </div>
         </div>
     </div>
