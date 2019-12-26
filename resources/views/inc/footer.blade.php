@@ -9,7 +9,7 @@
                     <div style="margin-top: 10px;">
                         <img class="img-fluid" src="{{ asset('images/web/nikola-tesla.png') }}" alt="Univerzitet Union">
                     </div>
-                    <div style="border-top: 2px solid #122f3d; border-bottom: 2px solid #2a6682; margin-top: 20px; margin-bottom: 20px;"></div>
+                    <div style="border-top: 1px solid #122f3d; border-bottom: 1px solid #2a6682; margin-top: 20px; margin-bottom: 20px;"></div>
                     <p class="footer_union">
                         Univerzitet “Union – Nikola Tesla“ osnovan je sa ciljem da omogući zakonito funkcionisanje 
                         fakulteta bez svojstva pravnog lica, kao i fakulteta sa svojstvom pravnog lica u njegovom 
@@ -81,12 +81,12 @@
 
             <div class="row" style="padding-top: 7px; padding-bottom: 7px;">
                 <div class="col-12 col-md-6">
-                    <p style="color: #fff; font-size: 14px;">
+                    <p style="color: #fff; font-size: 14px; font-family: 'Roboto', sans-serif;">
                         Copyright © 2019 Sva prava zadržana Univerzitet Union Nikola Tesla
                     </p>
                 </div>
                 <div class="col-12 col-md-6 text-right">
-                    <a style="color: #fff; font-size: 14px; text-decoration: none;" href="https://www.green-adv.rs" target="_blank">Izrada web sajta</a>
+                    <a style="color: #fff; font-size: 14px; text-decoration: none; font-family: 'Roboto', sans-serif;" href="https://www.green-adv.rs" target="_blank">Izrada web sajta</a>
                 </div>
             </div>
 

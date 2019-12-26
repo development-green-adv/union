@@ -50,12 +50,12 @@
                             <div class="carousel-caption">
                                 <img class="slider_img" src="{{ asset('images/web/slider-icon.png') }}">
                                 <h3 class="slider_title">Predupisni rok je otvoren!</h3>
-                                <p>
+                                <p class="slider-text">
                                     Saznajte više o prijemnom ispitu
                                 </p>
                                 <div class="red-line"></div>
 
-                                <a style="text-decoration: none; color: #fff !important;" class="slider_link" href="/sr/upit">DETALJNIJE</a>
+                                <a style="text-decoration: none;" class="slider_link" href="/sr/upis">DETALJNIJE</a>
 
                             </div>   
                         </div>
@@ -70,26 +70,28 @@
         <div class="container about_section">
             <div class="row">
                 <div class="col-12 col-md-2 text-center offset-md-2 company_services" style="padding-right: 0px; padding-left: 0px;">
-                    <div style="border-right: 2px solid #313131;">
+                    <div class="about_section-card">
                         <a style="color: #fff;" href="/sr/novosti"><img class="img-fluid" src="{{ asset('images/web/novosti.png') }}">
                         <h5>NOVOSTI</h5></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-2 text-center company_services" style="padding-right: 0px; padding-left: 0px;">
-                    <div style="border-right: 2px solid #313131;">
+                    <div class="about_section-card">
                         <a style="color: #fff;" href="/sr/kontakt"><img class="img-fluid" src="{{ asset('images/web/hands.png') }}">
                         <h5>ZAKAŽITE SASTANAK</h5></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-2 text-center company_services" style="padding-right: 0px; padding-left: 0px;">
-                    <div style="border-right: 2px solid #313131;">
+                    <div class="about_section-card">
                         <a style="color: #fff;" href="/sr/kontakt"><img class="img-fluid" src="{{ asset('images/web/location.png') }}">
                         <h5>LOKACIJA</h5></a>
                     </div>
                 </div>
                 <div class="col-12 col-md-2 text-center company_services" style="padding-right: 0px; padding-left: 0px;">
-                    <a style="color: #fff;" href="/sr/kontakt"><img class="img-fluid" src="{{ asset('images/web/prijava.png') }}">
-                    <h5>PRIJAVITE SE</h5></a>
+                    <div  class="about_section-card">
+                        <a style="color: #fff;" href="/sr/kontakt"><img class="img-fluid" src="{{ asset('images/web/prijava.png') }}">
+                            <h5>PRIJAVITE SE</h5></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -97,13 +99,13 @@
 
         <div class="container university_section">
             <div class="row">
-                <div class="col-12 col-md-6">
-                    <h5><b>DOBRODOŠLI NA UNIVERZITET<br> UNION NIKOLA TESLA</b></h5>
+                <div class="col-12 col-md-6 ">
+                    <h5 class="dobrodosli-naslov"><b>DOBRODOŠLI NA UNIVERZITET<br> UNION NIKOLA TESLA</b></h5>
                     <div class="red-line1"></div>
                     <!--<a style="padding-left: 0px;" href="#">OSNOVNE STUDIJE</a>
                     <a href="#">MASTER STUDIJE</a>
                     <a style="border-right: none;" href="#">DOKTORSKE STUDIJE</a>-->
-                    <p>
+                    <p class="dobrodosli-text">
                         Univerzitet akredituje studijske programe osnovnih akademskih studija u teničko-tehnološkom polju i to:
                         Građevinarstvo, Arhitektura i urbanizam, u društveno - humanističkom: Predzetnički biznis i menadžment 
                         nekretnina, Međunarodna politika i bezbednost a u prirodno - matematičkom: Zaštita životne sredine.
@@ -139,7 +141,7 @@
                     <div class="col-12 text-center">
                         <img class="img-fluid" src="{{ asset('images/web/univerzitet-icon.png') }}"><br><br>
                         <h3><b>STUDIJSKI PROGRAMI</b></h3>
-                        <h3 style="margin-top: 10px; margin-bottom: 20px;">UNIVERZITET UNION NIKOLA TESLA</h3>
+                        <h4 style="margin-top: 10px; margin-bottom: 20px;">UNIVERZITET UNION NIKOLA TESLA</h4>
                         <div class="red-line"></div>
                     </div>
                 </div>

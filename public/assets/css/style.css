@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Roboto:300,400,500,700,900&display=swap');
+
+
 h1, h2, h3, h4, h5, h6, p, a, li, ul{
     margin-bottom: 0px;
 }
@@ -20,6 +23,7 @@ html, body{
     font-size: 12px;
     color: #fff;
     margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu_header_section a{
@@ -37,6 +41,7 @@ html, body{
     padding-right: 8px;
     padding-left: 8px;
     border-right: 1px solid #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .menu_header_section{
@@ -67,35 +72,68 @@ html, body{
 
 .slider_title{
     margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-shadow: 2px 2px #2f2a2b;
+}
+
+.slider-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-shadow: 2px 2px #2f2a2b;
 }
 
 .red-line{
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    border-top: 5px solid #d71921;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-top: 6px solid #d71921;
+    border-radius: 3px;
 }
 
 .red-line1{
-    width: 200px;
+    width: 225px;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-top: 5px solid #d71921;
+    border-top: 6px solid #d71921;
+    border-radius: 3px;
+
 }
 
 .slider_link{
-    padding: 7px 20px;
+    padding: 15px 50px;
     background-color: #d71921;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none !important;
+    font-family: 'Merriweather', serif;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all .3s;
+    text-shadow: 2px 2px #2f2a2b;
 }
+
+/* .slider_link:hover {
+    background-color: #1d4d62;
+    color: #fff;
+    text-decoration: none;
+} */
 
 .about_section{
     position: relative;
     margin-top: -70px;
     z-index: 10;
+}
+
+.about_section-card {
+    border-left: 1px solid #2a6682;
+    border-right: 1px solid #122f3d;;
+}
+
+.about_section-card a {
+    text-decoration: none;
 }
 
 .about_section img{
@@ -104,6 +142,8 @@ html, body{
 
 .about_section h5{
     font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px #2f2a2b;
 }
 
 .company_services{
@@ -118,6 +158,17 @@ html, body{
     padding-bottom: 70px;
 }
 
+.university_section .dobrodosli-naslov {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 1.8rem
+}
+
+.university_section  .dobrodosli-text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6rem
+}
+
 .university_section a{
     font-size: 11.5px;
     color: #313131;
@@ -130,8 +181,8 @@ html, body{
 .red-link{
     display: inline-block;
     width: 150px !important;
-    padding-top: 7px;
-    padding-bottom: 7px; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
     color: #313131 !important;
     border: none !important;
     border: 2px solid #d4d4d4 !important;
@@ -142,6 +193,8 @@ html, body{
     text-decoration: none !important;
     font-size: 14px !important;
     font-weight: normal !important;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .red-link:hover{
@@ -151,10 +204,12 @@ html, body{
 }
 
 .ponuda{
-    font-size: 11px;
+    font-size: 12px;
     color: #313131;
     font-weight: bold;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
 .news_item{
@@ -195,13 +250,24 @@ html, body{
     background-size: cover;
 }
 
-.studijski_programi h3{
+.studijski_programi h3 {
     color: #fff;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px #2f2a2b;
+    font-size: 25px;
+}
+
+
+.studijski_programi h4 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .studijski_programi h5{
     color: #fff;
     margin-top: 18px;
+    font-family: 'Merriweather', serif;
+    text-shadow: 2px 2px #2f2a2b;
 }
 
 .footer_section{
@@ -213,6 +279,7 @@ html, body{
 .footer_union{
     color: #fff;
     font-size: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer_contact{
@@ -224,10 +291,12 @@ html, body{
     color: #fff;
     font-size: 12px;
     margin-left: 3px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer_video h6{
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer_video img{
@@ -305,6 +374,8 @@ html, body{
 
 .navbar-nav .nav-item a.nav-link {
     transition: all .3s;
+    font-family: 'Merriweather', serif;
+    text-shadow: 1px 1px #2f2a2b;
 }
 
 .navbar-nav .nav-item a.nav-link:hover {
