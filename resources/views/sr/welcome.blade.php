@@ -102,9 +102,6 @@
                 <div class="col-12 col-md-6 mb-5 mb-md-0">
                     <h5 class="dobrodosli-naslov"><b>DOBRODOŠLI NA UNIVERZITET<br> UNION NIKOLA TESLA</b></h5>
                     <div class="red-line1"></div>
-                    <!--<a style="padding-left: 0px;" href="#">OSNOVNE STUDIJE</a>
-                    <a href="#">MASTER STUDIJE</a>
-                    <a style="border-right: none;" href="#">DOKTORSKE STUDIJE</a>-->
                     <p class="dobrodosli-text">
                         Univerzitet akredituje studijske programe osnovnih akademskih studija u teničko-tehnološkom polju i to:
                         Građevinarstvo, Arhitektura i urbanizam, u društveno - humanističkom: Predzetnički biznis i menadžment 
