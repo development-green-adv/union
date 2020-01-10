@@ -69,7 +69,7 @@
 
         <div class="container about_section">
             <div class="row">
-                <div class="col-12 col-md-2 text-center offset-md-2 company_services" style="padding-right: 0px; padding-left: 0px;">
+                <div class="col-12 col-md-2 text-center offset-md-2 company_services company_services_first" style="padding-right: 0px; padding-left: 0px;">
                     <div class="about_section-card">
                         <a style="color: #fff;" href="/sr/novosti"><img class="img-fluid" src="{{ asset('images/web/novosti.png') }}">
                         <h5>NOVOSTI</h5></a>
@@ -87,7 +87,7 @@
                         <h5>LOKACIJA</h5></a>
                     </div>
                 </div>
-                <div class="col-12 col-md-2 text-center company_services" style="padding-right: 0px; padding-left: 0px;">
+                <div class="col-12 col-md-2 text-center company_services company_services_last" style="padding-right: 0px; padding-left: 0px;">
                     <div  class="about_section-card">
                         <a style="color: #fff;" href="/sr/kontakt"><img class="img-fluid" src="{{ asset('images/web/prijava.png') }}">
                             <h5>PRIJAVITE SE</h5></a>
@@ -99,7 +99,7 @@
 
         <div class="container university_section">
             <div class="row">
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-6 mb-5 mb-md-0">
                     <h5 class="dobrodosli-naslov"><b>DOBRODOŠLI NA UNIVERZITET<br> UNION NIKOLA TESLA</b></h5>
                     <div class="red-line1"></div>
                     <!--<a style="padding-left: 0px;" href="#">OSNOVNE STUDIJE</a>
@@ -115,11 +115,11 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <div class="row">
-                        <div class="col-12 col-md-4 text-center">
+                        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
                             <img class="img-fluid" src="{{ asset('images/web/about1.png') }}">
                             <a style="border: none;" href="/sr/o-univerzitetu"><p class="ponuda">SEDIŠTE UNIVERZITETA</p></a>
                         </div>
-                        <div class="col-12 col-md-4 text-center">
+                        <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
                             <img class="img-fluid" src="{{ asset('images/web/about2.png') }}">
                             <p class="ponuda">STA KAŽU NEKI AKADEMCI</p>
                         </div>
@@ -146,11 +146,11 @@
                     </div>
                 </div>
                 <div class="row" style="margin-top: 20px;">
-                    <div class="col-12 col-md-4 text-center">
+                    <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
                         <img class="img-fluid" src="{{ asset('images/web/graphic1.png') }}">
                         <h5>OSNOVNE STUDIJE</h5>
                     </div>
-                    <div class="col-12 col-md-4 text-center">
+                    <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
                         <img class="img-fluid" src="{{ asset('images/web/graphic2.png') }}">
                         <h5>MASTER STUDIJE</h5>
                     </div>

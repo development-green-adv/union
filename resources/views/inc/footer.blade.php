@@ -18,7 +18,7 @@
                         obrazovno-naučnim poljima, potencijalno otvarajući prostor za multidiciplinarne studije.
                     </p>
                     <div class="row" style="margin-top: 30px;">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
                             <div class="footer_contact">
                                 <img class="img-fluid" src="{{ asset('images/web/pinn.png') }}">
                             </div>
@@ -26,7 +26,7 @@
                                 <p>Cara Dušana 62-64,<br> 11000 Beograd</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
                             <div class="footer_contact">
                                 <img class="img-fluid" src="{{ asset('images/web/phoneee.png') }}">
                             </div>
@@ -34,7 +34,7 @@
                                 <p>011 2180-143<br> 011 2180-271</p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
                             <div class="footer_contact">
                                 <img class="img-fluid" src="{{ asset('images/web/emaill.png') }}">
                             </div>
@@ -49,43 +49,72 @@
                     <img class="img-fluid" src="{{ asset('images/web/union-video.png') }}">
                 </div>
             </div>
-
+            
             <div class="row">
                 <div class="col-12 footer_menu">
+                    <div style="border-top: 1px solid #122f3d; border-bottom: 1px solid #2a6682; margin-top: 20px; margin-bottom: 20px;"></div>
                     <ul class="navbar-nav">
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">NASLOVNA</a>
                         </li>
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">NASTAVA</a>
                         </li>
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">OSNOVNE STUDIJE</a>
                         </li>
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">MASTER STUDIJE</a>
                         </li>
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">DOKTORSKE STUDIJE</a>
                         </li>
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">O UNIVERZITETU</a>
                         </li>
-                        <li class="nav-item align-self-center">
+                        <li class="nav-item align-self-center d-none d-md-block">
                             <a class="nav-link" href="#">KONTAKT</a>
                         </li>
+
+                        <div class="row d-block d-md-none">
+                            <div class="col-12 d-inline-block">
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">NASLOVNA</a>
+                                </li>
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">NASTAVA</a>
+                                </li>
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">OSNOVNE STUDIJE</a>
+                                </li>
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">MASTER STUDIJE</a>
+                                </li>
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">DOKTORSKE STUDIJE</a>
+                                </li>
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">O UNIVERZITETU</a>
+                                </li>
+                                <li class="nav-item align-self-center">
+                                    <a class="nav-link" href="#">KONTAKT</a>
+                                </li>
+                            </div>
+                        </div>
                     </ul>
+                    <div style="border-top: 1px solid #122f3d; border-bottom: 1px solid #2a6682; margin-top: 20px; margin-bottom: 20px;"></div>
                 </div>
             </div>
+            
 
 
             <div class="row" style="padding-top: 7px; padding-bottom: 7px;">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 text-center text-md-left mb-3 mb-md-0">
                     <p style="color: #fff; font-size: 14px; font-family: 'Roboto', sans-serif;">
                         Copyright © 2019 Sva prava zadržana Univerzitet Union Nikola Tesla
                     </p>
                 </div>
-                <div class="col-12 col-md-6 text-right">
+                <div class="col-12 col-md-6 text-center text-md-right">
                     <a style="color: #fff; font-size: 14px; text-decoration: none; font-family: 'Roboto', sans-serif;" href="https://www.green-adv.rs" target="_blank">Izrada web sajta</a>
                 </div>
             </div>

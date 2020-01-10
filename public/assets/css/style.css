@@ -9,6 +9,10 @@ html, body{
     overflow-x: hidden;
 }
 
+.container {
+    max-width: 1376px;
+}
+
 .llogo:hover{
     background-color: transparent !important;
 }
@@ -18,6 +22,25 @@ html, body{
     padding-bottom: 5px;
     background-color: #313131;
 }
+
+.big-letters span {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.big-letters span:nth-child(1) {
+    font-size: 10px;
+}
+
+.big-letters span:nth-child(2) {
+    font-size: 16px;
+}
+
+.big-letters span:nth-child(3) {
+    font-size: 20px;
+} 
 
 .header_contact_section a{
     font-size: 12px;
@@ -145,6 +168,17 @@ html, body{
     font-family: 'Roboto', sans-serif;
     text-shadow: 2px 2px #2f2a2b;
 }
+
+.about_section .row .company_services_first {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.about_section .row .company_services_last {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 
 .company_services{
     background-color: #1d4d62;
@@ -304,8 +338,8 @@ html, body{
 }
 
 .footer_menu{
-    border-top: 2px solid #122f3d;
-    border-bottom: 2px solid #122f3d;
+    /* border-top: 1px solid #122f3d;
+    border-bottom: 1px solid #2a6682; */
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -403,6 +437,7 @@ html, body{
     border-top: 1px solid #fff;
     background-color: #1d4d62;
     position: relative;
+    margin-top: -1px;
 }
 
 .navbar-nav .nav-item ul.dropdown-menu li a {
@@ -544,4 +579,100 @@ ul.dropdown-menu-inner li:hover {
 .sidebar_item h4{
     color: #fff;
     font-size: 20px;
+}
+
+
+.about-section-mobile {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #2a6682;
+    z-index: 999;
+    transition: all .3s;
+    border-left: 1px solid #d9d9d9;
+    /* border-top: 1px solid #fff; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+.about-section-mobile div {
+    border-right: 1px solid #d9d9d9;
+    width: 25%;
+    height: 100%;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section-mobile div:hover {
+    background-color: #d71921;
+}
+
+.about-section-mobile div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section-mobile div a img {
+    width: 60%;
+}
+
+
+@media(max-width: 1200px) {
+    .navbar-nav .nav-item a.nav-link {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .about-section-mobile {
+        display: flex;
+    }
+
+    .about_section {
+        display: none;
+    }
+
+    .ponuda {
+        text-align: center;
+    }
+
+    .university_section .dobrodosli-naslov {
+        font-size: 20px;
+    }
+
+    .red-link {
+        display: inline;
+    }
+
+    .header_contact_section a {
+        font-size: 8px;
+    }
+
+    .slider_title {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 320px) {
+    .slider_title {
+        font-size: 20px;
+    }
+
+    .slider-text {
+        font-size: 12px;
+    }
+
+    .red-line {
+        width: 100%;
+    }
+
+    .slider_link {
+        font-size: 12px;
+    }
 }

@@ -1,15 +1,20 @@
 <section class="header_info">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6 header_contact_section">
+            <div class="col-12 col-md-6 text-center text-md-left mb-2 mb-md-0 header_contact_section">
                 <a href="#"><span><img class="img-fluid" src="{{ asset('images/web/pin.png') }}"></span> Cara Dusana 62-64, 11000 Beograd</a>
                 <a href="#"><span><img class="img-fluid" src="{{ asset('images/web/fon.png') }}"></span> 011 2180-143; 011 2180-271</a>
             </div>
-            <div class="col-12 col-md-6 header_lang_section text-right">
+            <div class="col-12 col-md-6 header_lang_section text-center text-md-right">
                 <a href="/">Naslovna</a>
                 <a href="#">Srpski</a>
                 <a href="#">Engleski</a>
-                <a style="border: none;" href="#">Arabian</a>
+                <a href="#">Arabian</a>
+                <div class="d-inline-block big-letters">
+                    <span id="letter-1">A</span>
+                    <span id="letter-2">A</span>
+                    <span id="letter-2">A</span>
+                </div>
             </div>
         </div>
     </div>
@@ -21,6 +26,9 @@
         <div class="row">
             <div class="col-12 text-center">
                 <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             @foreach($categories as $category)

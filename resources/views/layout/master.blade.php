@@ -27,6 +27,22 @@
         @show
 
 
+
+    <div class="about-section-mobile">
+        <div>
+            <a href="/sr/novosti"><img src="{{ asset('images/web/novosti.png') }}" alt=""></a>
+        </div>
+        <div>
+            <a href="/sr/kontakt"><img src="{{ asset('images/web/hands.png') }}" alt=""></a>
+        </div>
+        <div>
+            <a href="/sr/kontakt"><img src="{{ asset('images/web/location.png') }}" alt=""></a>
+        </div>
+        <div>
+            <a href="/sr/kontakt"><img src="{{ asset('images/web/prijava.png') }}" alt=""></a>
+        </div>
+    </div>
+
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
