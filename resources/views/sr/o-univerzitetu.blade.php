@@ -15,11 +15,10 @@
 
 
         <section class="studije_cover" style="background-image: url('{{ asset('images/web/studije-cover.png') }}');">
-            <div class="row">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="footer_contact">
+                            <div class="footer_contact mb-3 mb-md-0">
                                 <img class="img-fluid" src="{{ asset('images/web/fax-icon.png') }}">
                             </div>
                             <div class="footer_contact" style="padding-left: 15px;">
@@ -30,12 +29,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
 
        <section class="page_section">
-           <div class="row">
                <div class="container">
                    <div class="row">
                        <div class="col-12 col-md-8">
@@ -233,7 +230,6 @@
                        </div>
                    </div>
                </div>
-           </div>
        </section>
         
        @include("inc/news-sr")
