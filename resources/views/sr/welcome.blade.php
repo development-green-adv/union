@@ -14,7 +14,7 @@
     @include("inc/header")
 
 
-        <section style="margin-top: 60px; border-bottom: 25px solid #d71921;">
+        <section class="showcase">
             <div id="demo" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
 
