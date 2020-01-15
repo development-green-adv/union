@@ -22,10 +22,8 @@
                             <div class="footer_contact">
                                 <img class="img-fluid" src="{{ asset('images/web/fax-icon.png') }}">
                             </div>
-                            <div class="footer_contact" style="padding-left: 15px;">
+                            <div class="footer_contact">
                                 <h1>UNIVERZITET UNION</h1>
-                                <!--<div class="red-line1" style="margin-top: 5px; margin-bottom: 10px;"></div>
-                                <h6>OSNOVNE AKADEMSKE STUDIJE</h6>-->
                             </div>
                         </div>
                     </div>
@@ -35,12 +33,10 @@
 
 
         <section class="breadcrum">
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <p><b style="margin-right: 15px;">Vi ste ovde:</b> <a href="/">Naslovna</a> <!--<span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Osnovne studije</a> <span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Arhitektura i urbanizam</a> <span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Novosti</a>--></p>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p><b style="margin-right: 15px;">Vi ste ovde:</b> <a href="/">Naslovna</a> <!--<span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Osnovne studije</a> <span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Arhitektura i urbanizam</a> <span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Novosti</a>--></p>
                     </div>
                 </div>
             </div>

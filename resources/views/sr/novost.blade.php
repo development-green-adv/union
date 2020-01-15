@@ -15,33 +15,26 @@
 
 
         <section class="studije_cover" style="background-image: url('{{ asset('images/web/studije-cover.png') }}');">
-            <div class="row">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="footer_contact">
                                 <img class="img-fluid" src="{{ asset('images/web/fax-icon.png') }}">
                             </div>
-                            <div class="footer_contact" style="padding-left: 15px;">
-                                <!--<h1>ARHITEKTURA I URBANIZAM</h1>
-                                <div class="red-line1" style="margin-top: 5px; margin-bottom: 10px;"></div>
-                                <h6>OSNOVNE AKADEMSKE STUDIJE</h6>-->
+                            <div class="footer_contact">
                                 <h1>NOVOSTI</h1>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
 
         <section class="breadcrum">
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <p><b style="margin-right: 15px;">Vi ste ovde:</b> <a href="/">Naslovna</a> <span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Novosti</a></p>
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p><b style="margin-right: 15px;">Vi ste ovde:</b> <a href="/">Naslovna</a> <span><img src="{{ asset('images/web/blue-arrow-right.png') }}"></span> <a href="#">Novosti</a></p>
                     </div>
                 </div>
             </div>
@@ -49,7 +42,6 @@
 
 
         <section class="page_section">
-            <div class="row">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-8">
@@ -92,7 +84,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
     

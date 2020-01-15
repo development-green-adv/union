@@ -316,9 +316,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.footer_contact{
+.footer_contact {
     display: inline-block;
     vertical-align: middle;
+    padding-left: 15px;
 }
 
 .footer_contact p{
@@ -338,8 +339,6 @@ body{
 }
 
 .footer_menu{
-    /* border-top: 1px solid #122f3d;
-    border-bottom: 1px solid #2a6682; */
     margin-top: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -638,6 +637,7 @@ ul.dropdown-menu-inner li:hover {
     width: 100%;
     z-index: 99;
     display: none;
+    border-bottom: 5px solid #2a6682;
 }
 
 .mobile-nav .navbar-nav {
@@ -659,6 +659,7 @@ ul.dropdown-menu-inner li:hover {
 
 .mobile-btn {
     outline: none !important;
+    width: 40px;
 }
 
 .icon-bar {
@@ -710,6 +711,14 @@ ul.dropdown-menu-inner li:hover {
 
 @media(max-width: 992px) {
 
+    .footer_contact {
+        padding-left: 0;
+    }
+
+    .footer_contact h1 {
+        font-size: 25px;
+    }
+
     .menu_header_section-wrapper {
         display: none;
     }
@@ -731,6 +740,10 @@ ul.dropdown-menu-inner li:hover {
 }
 
 @media(max-width: 768px) {
+
+    .studije_cover {
+        margin-top: 0;
+    }
 
     .about-section-mobile {
         display: flex;
